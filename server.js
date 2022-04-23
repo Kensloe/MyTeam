@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var session = require('express-session');
 var passport = require('passport');
 var methodOverride = require('method-override');
 
@@ -45,10 +46,16 @@ app.use(function(req, res, next) {
   next();
 });
 
-const isLoggedIn = require('./config/auth'); 
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+app.use(function(req, res, next) {
+  res.locals.user = req.user;
+  next();
+});
+const isLoggedIn = require('./config/auth'); 
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
