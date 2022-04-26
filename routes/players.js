@@ -9,4 +9,4 @@ router.post('/players', players.create);
 // POST /movies/:id/players
 router.post('/players/:id/players', playersCtrl. addToRoster);
 
-mododule.exports = router;
+module.exports = router;

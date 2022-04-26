@@ -15,6 +15,8 @@ require('./config/passport');
 
 
 var indexRouter = require('./routes/index');
+var teamsRouter = require('./routes/teams');
+var allteamsRouter = require('./routes/allteams');
 var usersRouter = require('./routes/users');
 
 var app = express();
@@ -48,6 +50,8 @@ app.use(function(req, res, next) {
 
 
 app.use('/', indexRouter);
+app.use('/teams', teamsRouter);
+app.use('/allteams', allteamsRouter);
 app.use('/users', usersRouter);
 
 app.use(function(req, res, next) {
