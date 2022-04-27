@@ -1,9 +1,21 @@
-<h1></h1>
-<form id="add-teams" action="/teams/<%= team._id %>/" method="POST">
-    <select name="">
-      
-  </form>
+<%- include('../partials/header') %>
 
+<form id="add teams" method="POST" action="/teams">
+    <label for="name">name:name</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="country">name:country</label>
+    <select type="text" id="country" name="country">
+        <option value="USA">USA</option>
+        <option value="Mexico">Mexico</option>
+        <!-- add more options later -->
+    </select><br><br>
+    <label for="league">League</label>
+    <select type="text" id="league" name="league">
+        <option value="Premier">Premier</option>
+        <option value="U.S. Soccer">U.S. Soccer</option>
+        <!-- add more options later -->
+    </select><br><br>
+    <input type="submit" value="Add Team">
+</form>
 
-
-<h1>testing</h1>
+<%- include('../partials/footer') %>

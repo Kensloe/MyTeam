@@ -13,14 +13,15 @@ function index(req, res) {
 } 
 
 function show(req, res) {
-    res.render('teams/show', { title: 'Team Detail', team})
+    res.render('teams/show', { title: 'Team Detail', team })
 }
 
 function create(req, res) {
+    res.render('teams/create', {title: ''})
 
 }
 
 function newTeam(req, res) {
-    res.render('teams/new');
+    res.render('teams/new',{title: 'newTeam'} );
 
 }
