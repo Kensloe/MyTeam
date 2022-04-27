@@ -15,7 +15,6 @@ require('./config/passport');
 
 
 var indexRouter = require('./routes/index');
-var newTeam = require('./routes/Newteam');
 var teamsRouter = require('./routes/teams');
 var usersRouter = require('./routes/users');
 
