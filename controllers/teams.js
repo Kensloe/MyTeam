@@ -1,7 +1,26 @@
+const Team = require('../models/team')
 module.exports = {
-    index
+    index,
+    show,
+    create,
+    new: newTeam
 };
 
 function index(req, res) {
-    res.render('teams/index', {title: 'Teams'} )
+    Team.find({}, (err, teams)=>{
+       res.render('teams/index', {title: 'teams', teams } )
+    });
+} 
+
+function show(req, res) {
+    res.render('teams/show', { title: 'Team Detail', team})
+}
+
+function create(req, res) {
+
+}
+
+function newTeam(req, res) {
+    res.render('teams/new');
+
 }

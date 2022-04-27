@@ -2,13 +2,22 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const teamSchema = new Schema({
-    name: String,
-    country: String,
-    league: String,
-  }, {
+    name: {
+      type: String,
+    },
+    country: {
+      type: String,
+    league: {
+      type: String,
+    }
+  },
+  user: {type: Schema.Types.ObjectId, ref: 'User', required: true},
+  userName: String,
+  userAvatar: String
+}, {
       timestamps: true
   });
 
   
 
-module.exports = mongoose.model('team', teamSchema);
+module.exports = mongoose.model('Team', teamSchema);

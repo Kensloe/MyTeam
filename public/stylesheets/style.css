@@ -34,9 +34,10 @@ body > main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #E8ECEB;
+  background-color: #c1e8df;
   padding: 20px;
   overflow-y: scroll;
+  background-image:url("https://i.imgur.com/pOca8Ee.jpg");
 }
 
 body > main h1:first-child {
@@ -51,8 +52,8 @@ nav > a {
 }
 
 nav > a:hover:not(.active) {
-  color: white;
-  background-color: #424748;
+  color: rgb(146, 103, 103);
+  background-color: #2f7987;
 }
 
 nav > a.active {

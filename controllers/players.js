@@ -1,22 +1,10 @@
-const methodOverride = require('method-override');
 const Player = require('../models/player');
-const team = require('../models/team');
-const Team = require('../models/team');
+const Team = require('../models/teams');
 
 module.exports = {
     new: newPlayer,
     create,
-    addToRoster
 };
-
-function addToRoster(req, res) {
-    methodOverride.findById(req.params.id, function(err, movie) {
-    team.roster.push(req.body.playerId);
-    movie.save(function(err) {
-        res.redirect(`/players/${movie._id}`);
-    });
-    });
-}
 
 function create(req, res) {
     const s = req.body.born;
@@ -25,7 +13,6 @@ function create(req, res) {
     res.redirect('/players/new');
   });
 }
-
 
 
 function newPlayer(req, res) {

@@ -3,5 +3,5 @@ module.exports = {
 };
 
 function index(req, res) {
-    res.render('allteams/index', {title: 'allteams'} )
+    res.render('/index', {title: 'Teams'} )
 }
