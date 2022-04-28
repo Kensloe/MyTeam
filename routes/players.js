@@ -4,9 +4,9 @@ const isLoggedIn = require('../config/auth');
 const playersCtrl = require('../controllers/players');
 
 // GET /players/new
-router.get('/players/new', playersCtrl.new);
+router.get('/new', playersCtrl.new);
 // POST /players
-router.post('/players', playersCtrl.create);
+router.post('/', playersCtrl.create);
 // POST /movies/:id/players
 router.post('/teams/:id/players', playersCtrl.addToTeam);
 

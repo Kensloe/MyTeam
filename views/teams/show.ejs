@@ -1,5 +1,55 @@
 <%- include('../partials/header.ejs') %>
-<p><%= team.name %></p> 
+<p><%= team.name %></p>
+<p><%= team.country %></p>
+<p><%= team.league %></p>
+
+<!-- add player form   -->
+
+<form id="add players" method="POST" action="/teams/<%= team._id %>/players">
+    <label for="name">name:name</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="position">name:position</label>
+    <label for="age">name:age</label>
+    <select type="text" id="country" name="country">
+        <option value="USA">USA</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Bresil">Bresil</option>
+        <option value="Argentina">Argentina</option>
+        <option value="spain">spain</option>
+        <option value="France"></France>
+        <option value="Senegal">Senagal</option>
+        <option value="">Mexico</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="England">England</option>
+
+        <!-- add more options later -->
+    </select><br><br>
+    <label for="league">League</label>
+    <select type="text" id="league" name="league">
+        <option value="Premier">Premier</option>
+        <option value="U.S. Soccer">U.S. Soccer</option>
+        <option value="La Liga">La Liga</option>
+        <option value="Bundesliga">Bundesliga</option>
+        <option value="Liga Serie A">Liga Serie A</option>
+
+        <!-- add more options later -->
+    </select><br><br>
+    <input type="submit" value="Add Player">
+</form>
+
+<!-- Display players  -->
+<% team.players.forEach(function(player) { %>
+    <h3><%= player.name %></h3>
+  <h3><%= player.position %></h3>
+  <h3><%= player.country %></h3>
+  <h3><%= player.age %></h3>
+    <form method="POST" action="/players/<%=player._id%>?_method=DELETE" class="delete-form">
+      <button type ="submit">X</button>
+    </form>
+  <% }) %>
+
+
+ 
  <form action="/teams/<%= team._id %>?_method=DELETE" method="POST"> 
     <button type="submit">Delete</button> 
 </form>
