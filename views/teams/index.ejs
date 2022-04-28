@@ -2,10 +2,9 @@
 <table id="list">
     <thead>
       <tr>
-        <th>Title</th>
-        <th>teams</th>
-        <th>country</th>
-        <th>league</th>
+        <th>Name</th>
+        <th>Country</th>
+        <th>League</th>
 
         <th></th>
       </tr>
@@ -13,7 +12,7 @@
     <tbody>
       <% teams.forEach(function(t) { %>
         <tr>
-          <td><%= t.title %></td>
+          <td><%= t.name %></td>
           <td><%= t.country %></td>
           <td><%=t.league%></td>
           <td><a href="/teams/<%= t._id %>">DETAILS</a></td>

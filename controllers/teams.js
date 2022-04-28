@@ -1,9 +1,11 @@
+const team = require('../models/team');
 const Team = require('../models/team')
 module.exports = {
     index,
     show,
     create,
-    new: newTeam
+    new: newTeam,
+    deleteTeam,
 };
 
 function index(req, res) {
@@ -13,13 +15,38 @@ function index(req, res) {
 } 
 
 function show(req, res) {
-    res.render('teams/show', { title: 'Team Detail', team })
+    Team.findById(req.params.id, function(err, team) { 
+        res.render('teams/show', { title: 'Team Details', team});
+    });
 }
 
 function create(req, res) {
-    res.render('teams/create', {title: ''})
+    const team = new Team(req.body);
+    // Assign the logged in user's id
+    team.user = req.user._id;
+    team.save(function(err) {
+        console.log(team);
+      if (err) return res.redirect('/teams/new');
+      res.redirect(`/teams`);
+    });
+  }
+  
+  function deleteTeam(req, res) {
+    Team.findOneAndDelete(
+      {_id: req.params.id, user: req.user._id}, function(err) {
+            res.redirect('/teams');    
+      }
+    );
+  }
 
-}
+  function edit(req, res) {
+    Team.findOne({_id: req.params.id, user: req.user._id}, function(err, team) {
+      if (err || !team) return res.redirect('/teams');
+      res.render('teams/edit', {team});
+    });
+  }
+  
+
 
 function newTeam(req, res) {
     res.render('teams/new',{title: 'newTeam'} );
