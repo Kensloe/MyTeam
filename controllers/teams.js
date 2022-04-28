@@ -6,6 +6,7 @@ module.exports = {
     create,
     new: newTeam,
     deleteTeam,
+    editTeam,
 };
 
 function index(req, res) {
@@ -34,12 +35,12 @@ function create(req, res) {
   function deleteTeam(req, res) {
     Team.findOneAndDelete(
       {_id: req.params.id, user: req.user._id}, function(err) {
-            res.redirect('/teams');    
+            res.redirect('/teams/edit');    
       }
     );
   }
 
-  function edit(req, res) {
+  function editTeam(req, res) {
     Team.findOne({_id: req.params.id, user: req.user._id}, function(err, team) {
       if (err || !team) return res.redirect('/teams');
       res.render('teams/edit', {team});
