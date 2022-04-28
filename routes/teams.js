@@ -7,6 +7,7 @@ const isLoggedIn = require('../config/auth');
 
 router.get('/', teamsCtrl.index);
 router.get('/new', teamsCtrl.new);
+router.get('/user', teamsCtrl.forUser);
 router.get('/:id', teamsCtrl.show);
 router.post('/', isLoggedIn, teamsCtrl.create);
 router.delete('/:id', teamsCtrl.deleteTeam);

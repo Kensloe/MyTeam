@@ -1,20 +1,22 @@
 <%- include('../partials/header') %>
 
-<form id="add teams" method="POST" action="/teams">
+<form id="add players" method="POST" action="/players">
     <label for="name">name:name</label>
     <input type="text" id="name" name="name"><br><br>
-    <label for="country">name:country</label>
+    <label for="position">name:position</label>
+    <label for="age">name:age</label>
     <select type="text" id="country" name="country">
         <option value="USA">USA</option>
         <option value="Mexico">Mexico</option>
         <option value="Bresil">Bresil</option>
         <option value="Argentina">Argentina</option>
         <option value="spain">spain</option>
-        <option value="France">France</option>
+        <option value="France"></France>
         <option value="Senegal">Senagal</option>
         <option value="">Mexico</option>
         <option value="Uruguay">Uruguay</option>
         <option value="England">England</option>
+
         <!-- add more options later -->
     </select><br><br>
     <label for="league">League</label>
@@ -27,7 +29,7 @@
 
         <!-- add more options later -->
     </select><br><br>
-    <input type="submit" value="Add Team">
+    <input type="submit" value="Add Player">
 </form>
 
 <%- include('../partials/footer') %>

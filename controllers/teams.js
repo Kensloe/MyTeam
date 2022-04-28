@@ -1,5 +1,5 @@
-const team = require('../models/team');
 const Team = require('../models/team')
+const Player = require('../models/player')
 module.exports = {
     index,
     show,
@@ -7,11 +7,12 @@ module.exports = {
     new: newTeam,
     deleteTeam,
     editTeam,
+    forUser,
 };
 
 function index(req, res) {
-    Team.find({}, (err, teams)=>{
-       res.render('teams/index', {title: 'teams', teams } )
+    Team.find({}, function(err, teams) {
+       res.render('teams/index', {title: 'All Teams', teams } )
     });
 } 
 
@@ -35,7 +36,7 @@ function create(req, res) {
   function deleteTeam(req, res) {
     Team.findOneAndDelete(
       {_id: req.params.id, user: req.user._id}, function(err) {
-            res.redirect('/teams/edit');    
+            res.redirect('/teams');    
       }
     );
   }
@@ -46,10 +47,15 @@ function create(req, res) {
       res.render('teams/edit', {team});
     });
   }
-  
+
+  function forUser(req, res) {
+    Team.find({user: req.user._id}, (err, teams)=>{
+       res.render('teams/index', {title: 'My Teams', teams } )
+    });
+} 
 
 
 function newTeam(req, res) {
-    res.render('teams/new',{title: 'newTeam'} );
+    res.render('teams/new',{title: 'Add Team'} );
 
 }

@@ -1,6 +1,6 @@
 <%- include('../partials/header.ejs') %>
-<p><%= team.name %></p> 
- <form action="/teams/<%= team._id %>?_method=DELETE" method="POST"> 
+<p><%= Player.name %></p> 
+ <form action="/players/<%= player._id %>?_method=DELETE" method="POST"> 
     <button type="submit">Delete</button> 
 </form>
 <%- include('../partials/footer.ejs') %>
