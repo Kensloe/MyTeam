@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+
+<form id="add teams" method="POST" action="/teams/<%= team._id %>?_method=PUT">
+    <label for="name">name:name</label>
+    <input type="text" id="name" name="name" value="<%= team.name %>"><br><br>
+    <label for="country">name:country</label>
+    <select type="text" id="country" name="country" value="<%= team.country %>">
+        <option value="USA">USA</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Bresil">Bresil</option>
+        <option value="Argentina">Argentina</option>
+        <option value="spain">spain</option>
+        <option value="France">France</option>
+        <option value="Senegal">Senagal</option>
+        <option value="">Mexico</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="England">England</option>
+        <!-- add more options later -->
+    </select><br><br>
+    <label for="league">League</label>
+    <select type="text" id="league" name="league" value="<%= team.league %>">
+        <option value="Premier">Premier</option>
+        <option value="U.S. Soccer">U.S. Soccer</option>
+        <option value="La Liga">La Liga</option>
+        <option value="Bundesliga">Bundesliga</option>
+        <option value="Liga Serie A">Liga Serie A</option>
+
+        <!-- add more options later -->
+    </select><br><br>
+    <input type="submit" value="EDIT TEAM">
+</form>
+
+<%- include('../partials/footer') %>

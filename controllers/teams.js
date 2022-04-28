@@ -8,6 +8,8 @@ module.exports = {
     deleteTeam,
     editTeam,
     forUser,
+    update,
+
 };
 
 function index(req, res) {
@@ -42,7 +44,7 @@ function create(req, res) {
   }
 
   function editTeam(req, res) {
-    Team.findOne({_id: req.params.id, user: req.user._id}, function(err, team) {
+    Team.findOne({ _id: req.params.id, userRecommending: req.user._id}, function(err, team) {
       if (err || !team) return res.redirect('/teams');
       res.render('teams/edit', {team});
     });
@@ -54,6 +56,19 @@ function create(req, res) {
     });
 } 
 
+function update(req, res) {
+  Team.findOneAndUpdate(
+    {_id: req.params.id, userRecommending: req.user._id},
+    // update object with updated properties
+    req.body,
+    // options object with new: true to make sure updated doc is returned
+    {new: true},
+    function(err, team) {
+      if (err || !team) return res.redirect('/teams');
+      res.redirect(`teams/${team._id}`);
+    }
+  );
+}
 
 function newTeam(req, res) {
     res.render('teams/new',{title: 'Add Team'} );

@@ -53,4 +53,7 @@
  <form action="/teams/<%= team._id %>?_method=DELETE" method="POST"> 
     <button type="submit">Delete</button> 
 </form>
+<form action="/teams/<%= team._id %>/edit" method="GET">
+    <button class="edit-button" type="submit">Edit Team</button>
+  </form>
 <%- include('../partials/footer.ejs') %>
