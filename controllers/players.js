@@ -15,9 +15,12 @@ function create(req, res) {
 
 function addToTeam(req, res) {
   Team.findById(req.params.id, function(err, team) {
-    team.player.push(req.body.playerId);
-    team.save(function(err){
-      res.redirect(`/teams/${team._id}`);
+    const newPlayer = new Player(req.body);
+    newPlayer.save(()=>{
+    team.players.push(newPlayer._id);
+    team.save(()=>{
+      res.redirect(`/teams/${team._id}`);  
+    })
     });
   });
 
