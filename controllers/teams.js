@@ -65,7 +65,7 @@ function update(req, res) {
     {new: true},
     function(err, team) {
       if (err || !team) return res.redirect('/teams');
-      res.redirect(`teams/${team._id}`);
+      res.redirect(`/teams/${team._id}`);
     }
   );
 }
