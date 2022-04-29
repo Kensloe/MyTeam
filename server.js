@@ -52,7 +52,7 @@ app.use(function(req, res, next) {
 app.use('/', indexRouter);
 app.use('/teams', teamsRouter);
 app.use('/users', usersRouter);
-app.use('/players', playersRouter);
+app.use('/', playersRouter);
 
 app.use(function(req, res, next) {
   res.locals.user = req.user;
