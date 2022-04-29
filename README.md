@@ -31,11 +31,11 @@
 ![Trello](https://img.shields.io/badge/-Trello-333?style=flat&logo=trello) 
 ![Heroku](https://img.shields.io/badge/-Heroku-333?style=flat&logo=heroku)
 ![Git](https://img.shields.io/badge/-Git-333?style=flat&logo=git)
-![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
+![Github](https:(https://github.com/Kensloe/MyTeam)
 ![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio) 
 <h2> :atom_symbol: Getting Started </h2>
 <a href="https://trello.com/b/Om33YRGh/project2">Trello</a>
-<a href="https://clippy22.herokuapp.com/">Deployed Heroku App</a>
+<a href="https://mysoccerteam.herokuapp.com/">Deployed Heroku App</a>
 <h3> :calling: Instructions </h3>
 <details open>
  
