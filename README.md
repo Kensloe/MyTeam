@@ -14,7 +14,8 @@
   <a href="kensloel@gmail.com" target="_blank">
   </a>
 </div>
-<h1>:My Team: Description</h1>
+<h2>:My Team: Description</h2>
+
 <p align="center"img src=""</p>
 <details>
 
