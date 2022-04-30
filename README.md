@@ -3,7 +3,10 @@
 <p>My Team is a soccer based app. Where people can come to create their own teams, and add the players of their choice in a team. The app also have position for players, which something that most people don't know, but very important throughout the aspect of the game. (soccer)</p>
 <br>
 <h3>Screenshots<h3>
-  ![Home Page](https://user-images.githubusercontent.com/89327958/166122914-19972a9d-48f7-4a52-9957-f5c891041b50.png)
+  [Home Page](https://user-images.githubusercontent.com/89327958/166122914-19972a9d-48f7-4a52-9957-f5c891041b50.png)
+  ![allteam](https://user-images.githubusercontent.com/89327958/166122952-0a2008d2-36bf-41b8-9e9e-7eb28110c253.jpg)
+  ![Add Team](https://user-images.githubusercontent.com/89327958/166122976-58de7438-d496-4fe0-9c1b-5e4c6f97e7d8.png)
+  ![Add Player](https://user-images.githubusercontent.com/89327958/166123041-a96e93fd-4224-4547-86e6-3b6dd03fc8f7.png)
 
 <link rel="images" href="images">
   <p align="center"img src="https://i.imgur.com/NXx7nTW.png"</p>
@@ -28,7 +31,7 @@
 ![Git](https://img.shields.io/badge/-Git-333?style=flat&logo=git)
 ![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
 ![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio) 
-
+  
 <h3> :atom_symbol: Getting Started </h3>
 <a href="https://trello.com/b/Om33YRGh/project2">Trello</a>
 <a href="https://mysoccerteam.herokuapp.com/">Deployed Heroku App</a>
