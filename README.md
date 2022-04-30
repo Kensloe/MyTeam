@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/badge/-Portfolio:_tesh510.github.io-darkgreen?style=flat&logo=medium"/>
   </a>
   <a href="https://www.linkedin.com/in/kensloe-lariviere-7581a41a8/" target="_blank">
-    <img src="https://img.shields.io/badge/-linkedin.com/in/tesh-deo94-blue?style=flat&``logo=Linkedin&logoColor=white">
+    <img src="">
   </a> 
   <a href="kensloel@gmail.com" target="_blank">
     <img src="">
@@ -18,12 +18,9 @@
 <h1>:Pencil: Description</h1>
 <p align="center"img src=""</p>
 <details>
-<summary> :gear: Functionality</summary>
+<summary> :gear: Functionality</summary>>
   | Description | Screenshot |
-  |------------ | ------------|
-  | <h3 align="center">Landing Page</h3> | <img src=""/>
-  | <h3 align="center">Library</h3> | <img src=""/>
-  | <h3 align="center">Add Clips</h3> | <img src=""/>
+  
 </details>
 ## :computer: Technologies Used
 ![Mongoose ODM](https://img.shields.io/badge/-Mongoose_ODM-333?style=flat&logo=mongodb)
@@ -44,15 +41,12 @@
 <a href="https://clippy22.herokuapp.com/">Deployed Heroku App</a>
 <h3> :calling: Instructions </h3>
 <details open>
-  <summary>Community Guidelines</summary>
-  <ol>
-  <li>ADD MORE CLIPS!</li>
-  </ol>
+  
 </details>
 ## :fast_forward: Next Steps   
 ### Upcoming Features
 - [ ] API   
-- [ ] Search functionality   
-- [ ] Larger list of topics
+- [ ]  Add team
+-  
 
 
