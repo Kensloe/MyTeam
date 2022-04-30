@@ -3,9 +3,12 @@
 <p>My Team is a soccer based app. Where people can come to create their own teams, and add the players of their choice in a team. The app also have position for players, which something that most people don't know, but very important throughout the aspect of the game. (soccer)</p>
 <br>
 <h3>Screenshots<h3>
-  [Home Page](https://user-images.githubusercontent.com/89327958/166122914-19972a9d-48f7-4a52-9957-f5c891041b50.png)
+  ![Home Page](https://user-images.githubusercontent.com/89327958/166122914-19972a9d-48f7-4a52-9957-f5c891041b50.png)
+  <br>
   ![allteam](https://user-images.githubusercontent.com/89327958/166122952-0a2008d2-36bf-41b8-9e9e-7eb28110c253.jpg)
+  <br>
   ![Add Team](https://user-images.githubusercontent.com/89327958/166122976-58de7438-d496-4fe0-9c1b-5e4c6f97e7d8.png)
+  <br>
   ![Add Player](https://user-images.githubusercontent.com/89327958/166123041-a96e93fd-4224-4547-86e6-3b6dd03fc8f7.png)
 
 <link rel="images" href="images">
