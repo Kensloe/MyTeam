@@ -1,27 +1,18 @@
+<h2>App Title: My Team</h2>
+<h4>Description</h4>
+<p>My Team is a soccer based app. Where people can come to create their own teams, and add the players of their choice in a team. The app also have position for players, which something that most people don't know, but very important throughout the aspect of the game. (soccer)</p>
+<br>
+<h3>Screenshots<h3>
 <link rel="images" href="images">
 <div align="center">
-   <img src="https://i.imgur.com/06Tmvm3.jpg"/>
+<p align="center"img src="https://i.imgur.com/NXx7nTW.png"</p>
+<p align="center"img src="https://imgur.com/a/kExCq1q"</p>
+<p align="center"img src="https://imgur.com/a/w7RyTlh"</p>
+<p align="center"img src="https://i.imgur.com/uDZGiGp.png"</p>
 </div>
 
-<div align="center">
-  <h3>Kensloe!</h3>`                             
-  <a href="https://github.com/Kensloe/MyTeam"_target="_blank">
-    <img src="https://img.shields.io/badge/-Portfolio:_tesh510.github.io-darkgreen?style=flat&logo=medium"/>
-  </a>
-  <a href="https://www.linkedin.com/in/kensloe-lariviere-7581a41a8/" target="_blank">
-    <img src="">
-  </a> 
-  <a href="kensloel@gmail.com" target="_blank">
-    <img src="">
-  </a>
-</div>
-<h1>:Pencil: Description</h1>
-<p align="center"img src=""</p>
-<details>
-<summary> :gear: Functionality</summary>>
-  | Description | Screenshot |
-  
-</details>
+<br>
+<h3>Technologies Used</h3>
 ## :computer: Technologies Used
 ![Mongoose ODM](https://img.shields.io/badge/-Mongoose_ODM-333?style=flat&logo=mongodb)
 ![Node](https://img.shields.io/badge/-Node.js-333?style=flat&logo=node.js)
@@ -36,17 +27,29 @@
 ![Git](https://img.shields.io/badge/-Git-333?style=flat&logo=git)
 ![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
 ![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio) 
-<h2> :atom_symbol: Getting Started </h2>
+
+<h3> :atom_symbol: Getting Started </h3>
 <a href="https://trello.com/b/Om33YRGh/project2">Trello</a>
-<a href="https://clippy22.herokuapp.com/">Deployed Heroku App</a>
-<h3> :calling: Instructions </h3>
-<details open>
+<a href="https://mysoccerteam.herokuapp.com/">Deployed Heroku App</a>
+<br>
+<div align="center">
+  <h3>Kensloe!</h3>`                             
+  <a href="https://github.com/Kensloe/MyTeam"_target="_blank">
+    <img src=""/>
+  </a>
+  <a href="https://www.linkedin.com/in/kensloe-lariviere-7581a41a8/" target="_blank">
+    <img src="">
+  </a> 
+  <a href="kensloel@gmail.com" target="_blank">
+    <img src="">
+  </a>
+</div>
   
 </details>
 ## :fast_forward: Next Steps   
-### Upcoming Features
-- [ ] API   
-- [ ]  Add team
--  
+### Upcoming feature
+- [Api ] 
+- [Add players and able to play the game ]  
+
 
 
