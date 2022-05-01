@@ -16,7 +16,7 @@
 <p align="center"img src="https://imgur.com/a/kExCq1q"</p>
 <p align="center"img src="https://imgur.com/a/w7RyTlh"</p>
 <p align="center"img src="https://i.imgur.com/uDZGiGp.png"</p>
-</div>
+
 
 <br>
 <h3>Technologies Used</h3>
